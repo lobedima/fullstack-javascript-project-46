@@ -3,33 +3,31 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lobedima/fullstack-javascript-project-46.git"
-  },
-  "scripts": {
-    "test": "npx jest"
-  },
-  "author": "Lyubenko Dmitriy",
-  "license": "ISC",
-  "dependencies": {
-    "commander": "^12.1.0",
-    "js-yaml": "^4.1.0",
-    "lodash": "^4.17.21",
-    "stylish": "^1.0.0",
-    "yaml": "^2.5.1"
-  },
   "type": "module",
   "bin": {
     "gendiff": "./bin/gendiff.js"
   },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "author": "Lyubenko Dmitriy",
+  "license": "ISC",
   "devDependencies": {
-    "@eslint/js": "^9.11.1",
-    "eslint": "^8.57.1",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0",
+    "@babel/core": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "codeclimate-test-reporter": "^0.5.1",
+    "eslint": "8.22.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
     "eslint-plugin-react": "^7.37.1",
-    "globals": "^15.10.0",
-    "jest": "^29.0.3"
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21"
   }
 }

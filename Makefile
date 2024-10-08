@@ -1,12 +1,17 @@
 install:
 	npm ci
-	
-lint:
-	npx eslint .
-	
+
+dependencies:
+	npm install
+
 test:
 	npm test
-	
-test-coverage:
-	npm test -- --coverage --coverageProvider=v8
 
+coverage:
+	npm run test -- --coverage
+
+lint:
+	npx eslint .
+
+gendiff:
+	npm link
