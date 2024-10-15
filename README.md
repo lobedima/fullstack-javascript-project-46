@@ -3,9 +3,18 @@
 <a href="https://codeclimate.com/github/lobedima/fullstack-javascript-project-44/test_coverage"><img src="https://api.codeclimate.com/v1/badges/30b12d7fa7ce59b2463f/test_coverage" /></a>
 <a href="https://codeclimate.com/github/lobedima/fullstack-javascript-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/30b12d7fa7ce59b2463f/maintainability" /></a>
 
+### Description:
+Difference Calculator is a program that determines the difference between two data structures.
+
+### Technology stack:
+JavaScript, Git, GitHub, GitHub Actions (CI), ESLint, Lodash, Commander.js, Js-yaml, CodeClimate, Asciinema.
+
+### How to use:
+Enter gendiff -h for help. Enter gendiff path/to/file.yml another/path/file.json for default stylish format report. Enter gendiff --format plain/json path/to/file.yml another/path/file.json for plain or json format report.
+
 # gendiff <filepath1> <filepath2>
 
-Находит различия между глубокими и плоскими JSON и YAML файлами в виде stylish.
+Finds the differences between deep and flat JSON and YAML files in the form of stylish.
 
 name1.json
 ```
@@ -74,7 +83,7 @@ name2.json
 ```
 ## gendiff ./name1.json ./name2.json 
 
-Или gendiff -f ./name1.json ./name2.json или gendiff --format stylish ./name1.json ./name2.json
+or gendiff -f ./name1.json ./name2.json or gendiff --format stylish ./name1.json ./name2.json
 
 Output:
 ```
@@ -125,7 +134,7 @@ Output:
 ```
 # gendiff --format plain <filepath1> <filepath2>
 
-Находит различия между глубокими и плоскими JSON и YAML файлами в виде plain.
+Finds the differences between deep and flat JSON and YAML files in plain format.
 
 Output:
 ```
